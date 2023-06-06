@@ -1,5 +1,6 @@
 # Analise de dados via_mobilidade
 
+
 #importe dos pacotes
 import pandas as pd
 import numpy as np
@@ -77,6 +78,7 @@ for timebox in data.split(sep='\n'):
     continue
 
 # -- results
+
 for day in incident_by_day:
   print(f'{day}: {incident_by_day[day]}')
 
@@ -92,7 +94,6 @@ Vamos analisar dados de mobilidade urbana da cidade de São Paulo, usando o paco
 df = df.drop(columns=['hour','slowness_traffic_%'])
 
 # -- analytics
-
 
   # --
   # -- inicio da computação vetorial
