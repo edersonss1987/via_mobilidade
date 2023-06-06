@@ -1,4 +1,5 @@
-# Analise de dados via mobilidade
+# Analise de dados via_mobilidade
+
 
 #importe dos pacotes
 import pandas as pd
@@ -6,7 +7,6 @@ import numpy as np
 import os
 from getpass import getpass
 from time import time
-
 
 
 #criando o dataframe apartir do arquivo
@@ -87,18 +87,13 @@ tempo = fim - inicio
 print(tempo)
 
 
-
-
-
 Substitua o trecho do código do algoritmo que utiliza da **computação escalar** por um que utiliza da **computação vetorial**. Use o pacote NumPy.
 Vamos analisar dados de mobilidade urbana da cidade de São Paulo, usando o pacote Numpy. A base de dados contem a quantidade de acidentes ocorridos na cidade entre 14/12/09 e 18/12/09, das 07:00h ás 20:00h, agregados em intervalos de 30 minutos.
 
 # -- read
-
 df = df.drop(columns=['hour','slowness_traffic_%'])
 
 # -- analytics
-
 
   # --
   # -- inicio da computação vetorial
@@ -110,8 +105,6 @@ incidentes_dia_16 = np.sum(np.array(df[54:81]))
 incidentes_dia_17 = np.sum(np.array(df[81:108]))
 incidentes_dia_18 = np.sum(np.array(df[108:135]))
   
-  
-
   # --
   # -- fim da computação vetorial
   # --
